@@ -15,51 +15,75 @@ section {
 }
 
 #header {
-    height: 100vh;
-    background-image: url('./Spectrum-Gradient.svg');
-    background-size: 100% 100%;
+    background-image: url('./Aspen2.png');
+    max-width:100%;
+    height: 50vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
+#header > div {
+    position: relative;
+}
 #header-block {
-    padding-top: 10vh;
+    position: absolute;
+    left:35%;
+    width: 30%;
+    margin-top: 10vh;
+    padding:30px;
     text-align: center;
+    background: rgba(204, 204, 204, 0.9);  
+    border-radius: 10px;
+    overflow: hidden;
 }
 #header-block h1 {
-    font-size: 80px;
+    font-size: 8vh;
     text-align: center;
+    color: #000000;
 }
 
 #header-block h2 {
-    font-size: 40px;
+    font-size: 4vh;
 }
 
-#header-block ul a {
-    display:inline;
+/*******************NAV BAR**************** */
+#nav-bar {
+    padding: 0;
+}
+
+#nav-bar #nav-container {
+    background-color: black;
+    padding-top:30px;
+    padding-bottom: 30px;
+    background: rgba(208, 231, 221, 0.9)
+}
+
+#nav-bar ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#nav-bar ul a {
     margin-right:15px;
     text-decoration: none; 
 }
-
-#header-block ul a:visited {
+#nav-bar ul a:visited {
     text-decoration: none; 
 }
-#header-block ul a:hover{
+#nav-bar ul a:hover{
     text-decoration: none; 
 }
-#header-block ul a:hover{
+#nav-bar ul a:hover{
     text-decoration: none; 
 }
-#header-block ul li {
+#nav-bar ul li {
     display: inline;
 }
 
-#header-block div a img {
-    max-width:300px;
-    height: auto;
-    width: auto;
-    border-radius: 10px;
-}
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 /* *****************SKILLS***************** */
 #skills {
     background-color: lightblue;
@@ -81,25 +105,31 @@ section {
 }
 
 #section-projects .project {
+    padding-top: 5px;
     max-width: 75rem;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+}
+
+#section-projects hr {
+    border-top: 3px solid black;
 }
 
 .project > div {
-    display:block;
+    display: inline-block;
     width: 50%;
 }
 
 .project .project-desc {
-    text-align:center;
-    width: 50%;
+    justify-content: left;
+    align-self: center;
+    width: 25%;
 }
 
 .project .project-img {
-    text-align: center;
+    text-align: right;
+   width: 75%;
 }
 
 #section-projects .project div img {
@@ -113,4 +143,12 @@ section {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 15px;
+}
+
+/* *****************CONTACT ME***************** */
+
+#contact-me img {
+    max-width: 150px;
+    width: auto;
+    height: auto;
 }
