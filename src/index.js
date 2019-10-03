@@ -1,21 +1,7 @@
  import _ from 'lodash';
  import './style.css'
 
-  function component() {
-    const element = document.createElement('div');
-
-   // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-
-    return element;
-  }
-
-  document.body.appendChild(component());
-
-  window.onscroll = function() {myFunction()};
-
-// Get the navbar
+// Get the navba
 var navbar = document.getElementById("nav-bar");
 
 // Get the offset position of the navbar
@@ -28,4 +14,12 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
 }
