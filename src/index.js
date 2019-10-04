@@ -23,3 +23,31 @@ function on() {
 function off() {
   document.getElementById("overlay").style.display = "none";
 }
+
+function fadeIn() {
+  var element = document.getElementById("header-block");
+  element.classList.add("fadeIn");
+}
+
+window.onload = fadeIn();
+
+
+var navHome = document.getElementById('sec-home');
+navHome.addEventListener("click", function(){
+  document.getElementById('section-home').scrollIntoView({behavior: 'smooth'});
+})
+
+var navProjects = document.getElementById('sec-projects');
+navProjects.addEventListener('click', function(){
+  document.getElementById('section-projects').scrollIntoView({behavior: 'smooth'});
+})
+
+var navSkills = document.getElementById('sec-skills');
+navSkills.addEventListener('click', function() {
+  document.getElementById('section-skills').scrollIntoView({behavior: 'smooth'});
+})
+
+var navContact = document.getElementById('sec-contact');
+navContact.addEventListener('click', function(){
+  document.getElementById('section-contact').scrollIntoView({behavior: 'smooth'});
+})

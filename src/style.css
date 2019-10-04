@@ -38,6 +38,9 @@ section {
     background: rgba(204, 204, 204, 0.9);  
     border-radius: 10px;
     overflow: hidden;
+}
+
+.fadeIn {
     animation: fadeInLoad 5s;
 }
 
