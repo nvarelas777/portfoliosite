@@ -39,6 +39,21 @@
         </ul>
       </div>
     </div>
+    <div>
+      <div class="topnav">
+        <a href="#section-home" class="active">Logo</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#section-skills">Skills</a>
+          <a href="#section-projects">Projects</a>
+          <a href="#section-contact">Contact</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" id="nav-bar-expand">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
   </section>
   <section id="section-skills">
     <h1 class="section-header-text">Skills</h1>
@@ -55,11 +70,13 @@
       <i class="devicon devicon-react-original-wordmark colored"></i>
       <i class="devicon devicon-webpack-plain-wordmark colored"></i>
       <i class="devicon devicon-mongodb-plain-wordmark colored"></i>
+      <i class="devicon devicon-mysql-plain-wordmark colored"></i>
       <i class="devicon devicon-nodejs-plain-wordmark colored"></i>
       <i class="devicon devicon-express-original-wordmark colored"></i>
     </div>
   </section>
   <section id="section-projects">
+    <h1 class="section-header-text">Projects</h1>
     <div class="project">
       <div class="project-desc">
         <h1>Drink DB</h1>
@@ -96,16 +113,21 @@
     </div>
   </section>
   <section id="section-contact">
+    <h1 class="section-header-text">Contact Me</h1>
     <div class="container">
-      <div id="contact-header">
-        <h1>Contact Me</h1>
-        <i class="fa fab fa-github fa-3x"></i>
-        <i class="fa fab fa-linkedin fa-3x"></i>
-      </div>
       <div id="contact-body">
-        <h3>Resume</h3>
         <a href="//www.dropbox.com/s/075925222so0b9t/Varelas_Nicholas_Resume.pdf?dl=0" target="_blank">
           <img src="//i.imgur.com/5gwXVP5.png">
+        </a>
+      </div>
+      <div id="contact-header">
+        <a href="//github.com">
+          <i class="fa fab fa-github fa-3x"></i>
+          <span>Github</span>
+        </a>
+        <a href="//linkedin.com/nvarelas777">
+          <i class="fa fab fa-linkedin fa-3x"></i>
+          <span>Linked In</span>
         </a>
       </div>
     </div>
@@ -113,7 +135,7 @@
   <section id="section-footer">
     <div id=footer-nav>
       <ul>
-        <a href="#section-home">
+        <a href="sec-home">
           <li>Home</li>
         </a>
         <a href="#section-projects">
