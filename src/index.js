@@ -39,15 +39,18 @@ navHome.addEventListener("click", function(){
 
 var navProjects = document.getElementById('sec-projects');
 navProjects.addEventListener('click', function(){
-  document.getElementById('section-projects').scrollIntoView({behavior: 'smooth'});
+  var projectsOffset = document.querySelector('#section-projects').offsetTop - 86;
+  window.scroll({top: projectsOffset, behavior: 'smooth'});
 })
 
 var navSkills = document.getElementById('sec-skills');
 navSkills.addEventListener('click', function() {
-  document.getElementById('section-skills').scrollIntoView({behavior: 'smooth'});
+  var skillsOffset = document.querySelector('#section-skills').offsetTop - 86;
+  window.scroll({top: skillsOffset, behavior: 'smooth'});
 })
 
 var navContact = document.getElementById('sec-contact');
 navContact.addEventListener('click', function(){
-  document.getElementById('section-contact').scrollIntoView({behavior: 'smooth'});
+  var contactOffset = document.querySelector('#section-contact').offsetTop - 86;
+  window.scroll({top: contactOffset, behavior: 'smooth'});
 })
