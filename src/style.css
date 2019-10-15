@@ -5,13 +5,17 @@
 }
 /* *****************HEADER***************** */
 body {
-    font-family:  Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
+    font-family:  'Hepta Slab', 'Trebuchet MS', sans-serif;
+    font-weight: 500;
 }
 
 section {
     padding-top:20px;
     padding-bottom: 40px;
+}
+
+section > h1 {
+    
 }
 
 #section-home {
@@ -35,11 +39,12 @@ section {
     margin-top: 20vh;
     padding:30px;
     text-align: center;
-    background: #7892c2;  
+    background: rgb(119, 178, 245, .9);  
     border: 2px solid rgb(32, 85, 146);
     box-shadow: 3px 3px rgb(3, 58, 122);
     border-radius: 10px;
     overflow: hidden;
+    font-weight: bold;
 }
 #button-container {
     text-align: center;
@@ -74,6 +79,10 @@ section {
     font-size: 4vh;
 }
 
+#header-block h4 {
+    padding-top:10px;
+}
+
 /*******************NAV BAR**************** */
 #nav-container {
     position: fixed;
@@ -82,7 +91,7 @@ section {
     background-color: black;
     padding-top:10px;
     padding-bottom: 10px;
-    background: #7892c2;
+    background: rgb(119, 178, 245, .9);
     animation: fadeInLoad 5s;
 }
 
@@ -266,6 +275,7 @@ section {
 #section-contact {
     background-color: rgb(55, 86, 126);
 }
+
 #section-contact .container {
     text-align: center;
     width: 100%;
@@ -298,7 +308,7 @@ section {
 /*********************FOOTER**********************/
 #section-footer {
     max-height: 400px;
-    background-color: rgb(129, 148, 201);
+    background-color: rgb(192, 191, 191);
 }
 
 #section-footer ul {
@@ -348,8 +358,7 @@ a.anchor-tag:hover {
 
 .button {
 	box-shadow: 0px 0px 0px 2px #9fb4f2;
-	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
-	background-color:#7892c2;
+	background: rgb(119, 178, 245, .9);  
 	border-radius:2px;
     border: 1px solid rgb(32, 85, 146);
     box-shadow: 2px 2px rgb(3, 58, 122);
@@ -358,14 +367,13 @@ a.anchor-tag:hover {
     text-align: center;
     cursor:pointer;
     color: black;
-	font-family:Arial;
 	font-size:19px;
 	padding:12px 37px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #283966;
 }
 .button:hover {
-	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background:linear-gradient(to bottom, #77b2f5 5%, #7892c2 100%);
 	background-color:#476e9e;
 }
 .button:active {
