@@ -73,10 +73,11 @@ section > h1 {
     font-size: 8vh;
     text-align: center;
     color: #000000;
+    font-size: 70px;
 }
 
 #header-block h2 {
-    font-size: 4vh;
+    font-size: 40px;
 }
 
 #header-block h4 {
@@ -433,7 +434,7 @@ a.anchor-tag:hover {
       
       /* Style the active link (or home/logo) */
       .active {
-        background-color: #4CAF50;
+        background-color: rgb(119, 178, 245, .9);
         color: white;
         height: 200px;
       }

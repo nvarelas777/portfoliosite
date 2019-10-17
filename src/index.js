@@ -18,13 +18,21 @@ navExpand.addEventListener('click', function() {
   }
 });
 
-function on() {
-  document.getElementById("overlay").style.display = "block";
-}
+var links = document.querySelectorAll('#myLinks > a');
+var x = document.getElementById("myLinks");
+links.forEach(function(link) {
+  link.addEventListener('click', function(){
+    x.style.display = 'none';
+  })
+})
 
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
+// function on() {
+//   document.getElementById("overlay").style.display = "block";
+// }
+
+// function off() {
+//   document.getElementById("overlay").style.display = "none";
+// }
 
 function fadeIn() {
   var element = document.getElementById("header-block");
