@@ -43,8 +43,8 @@ window.onload = fadeIn();
 
 //Event Listeners for Scrolling
 
-var projectsOffset = document.querySelector('#section-projects').offsetTop - 86;
 var skillsOffset = document.querySelector('#section-skills').offsetTop - 86;
+var projectsOffset = document.querySelector('#section-projects').offsetTop - 86;
 var contactOffset = document.querySelector('#section-contact').offsetTop - 86;
 
 var navHome = document.getElementById('sec-home');
