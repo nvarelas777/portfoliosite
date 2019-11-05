@@ -390,7 +390,7 @@ a.anchor-tag:hover {
 }
 
 /* Navbar start */
-@media (max-width: 768px) {
+@media (max-width: 980px) {
     #nav-bar {
         display:none;
     }
@@ -399,7 +399,6 @@ a.anchor-tag:hover {
         top: 0;
         width: 100%;
         display: block;
-
         background-color: #333;
       }
       
@@ -439,4 +438,38 @@ a.anchor-tag:hover {
         color: white;
         height: 200px;
       }
+}
+
+@media only screen and (max-width: 768px) {
+    /*Home */
+    #header-block{
+        width: auto;
+    }
+    
+    /* Projects mobile */
+    .project .project-desc {
+        display: block;
+        width: 100%;
+    }
+    .project-desc div {
+        text-align: center;
+    }
+
+    .project-desc a {
+        width: 200px;
+        max-width: 200px;
+        font-size: 30px;
+    }
+    .project .project-img {
+        display: block;
+        width: 100%;
+    }
+
+    /* Contact Me */
+    #section-contact .container div {
+        width: 100%;
+    }
+    #contact-body img {
+        width: 100%;
+    }
 }
