@@ -182,12 +182,12 @@ section > h1 {
    width: 50%;
 }
 
-.project #disco-db-project-img {
+#disco-db-project-img {
     text-align: left;
     width: 60%;
 }
 
-.project  #disco-db-project-desc {
+#disco-db-project-desc {
     text-align: left;
     width: 40%;
 }
@@ -303,6 +303,7 @@ section > h1 {
 }
 #contact-body img {
     padding: 20px;
+    width: 100%;
     max-width:500px;
 }
 
@@ -364,7 +365,7 @@ a.anchor-tag:hover {
     border: 1px solid rgb(32, 85, 146);
     box-shadow: 2px 2px rgb(3, 58, 122);
     display:inline-block;
-    max-width: 75px;
+    width: 65px;
     text-align: center;
     cursor:pointer;
     color: black;
@@ -380,13 +381,6 @@ a.anchor-tag:hover {
 .button:active {
 	position:relative;
 	top:1px;
-}
-
-@media (max-width: 1142px){
-    #section-skills #icons .devicon{
-       font-size: 180px;
-       margin: 
-    }
 }
 
 /* Navbar start */
@@ -443,7 +437,19 @@ a.anchor-tag:hover {
 @media only screen and (max-width: 768px) {
     /*Home */
     #header-block{
-        width: auto;
+        width: 80%;
+    }
+
+    #header-block h1{
+        font-size: 8vw;
+    }
+
+    #header-block h2{
+        font-size: 5.5vw;
+    }
+
+    #header-block h4 {
+        font-size: 3vw;
     }
     
     /* Projects mobile */
@@ -455,12 +461,19 @@ a.anchor-tag:hover {
         text-align: center;
     }
 
-    .project-desc a {
-        width: 200px;
-        max-width: 200px;
-        font-size: 30px;
-    }
     .project .project-img {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #disco-db-project-img {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #disco-db-project-desc {
         display: block;
         width: 100%;
     }
@@ -469,7 +482,28 @@ a.anchor-tag:hover {
     #section-contact .container div {
         width: 100%;
     }
-    #contact-body img {
+    #contact-body {
         width: 100%;
+        text-align: center;
+    }
+
+    #contact-header a {
+        display: inline;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 540px){ 
+    #contact-body img {
+        padding: 0px;
+    }
+
+    #contact-header a {
+        display: block;
+        text-align: center;
+    }
+    #footer-nav ul {
+        display: block;
+        text-align: center;
     }
 }
