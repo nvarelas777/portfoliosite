@@ -432,6 +432,11 @@ a.anchor-tag:hover {
         color: white;
         height: 200px;
       }
+
+      #section-skills #icons .devicon {
+          font-size: 8rem;
+          margin: 10px;
+      }
 }
 
 @media only screen and (max-width: 768px) {
@@ -450,6 +455,13 @@ a.anchor-tag:hover {
 
     #header-block h4 {
         font-size: 3vw;
+    }
+
+    /* Skills */
+    #section-skills #icons .devicon {
+        display: inline-block;
+        font-size: 6rem;
+        margin: 10px
     }
     
     /* Projects mobile */
