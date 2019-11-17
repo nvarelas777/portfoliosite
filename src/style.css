@@ -14,10 +14,7 @@ section {
     padding-bottom: 40px;
 }
 
-section > h1 {
-    
-}
-
+/*** Home ***/
 #section-home {
     background-image: url('./mammothgreyscale.png');
     margin: 0;
@@ -26,9 +23,11 @@ section > h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-#section-home > div {
-    position: relative;
-}
+
+/* #section-home > div {
+    position: relative; 
+} */
+
 #header-block {
     position: absolute;
     left: 0; 
@@ -46,14 +45,31 @@ section > h1 {
     overflow: hidden;
     font-weight: bold;
 }
+
+#header-block h1 {
+    /* font-size: 8vh; */
+    text-align: center;
+    color: #000000;
+    font-size: 70px;
+}
+
+#header-block h2 {
+    font-size: 40px;
+}
+
+#header-block h4 {
+    padding-top:10px;
+}
+
 #button-container {
     text-align: center;
     margin-top: 425px;
 }
 
-#button-container a {
-    display:inline-block;
+#button-container span {
+    /* display:inline-block; */
     margin: 15px;
+    font-size: inherit;
 }
 
 .fadeIn {
@@ -69,21 +85,6 @@ section > h1 {
     }
 }
 
-#header-block h1 {
-    font-size: 8vh;
-    text-align: center;
-    color: #000000;
-    font-size: 70px;
-}
-
-#header-block h2 {
-    font-size: 40px;
-}
-
-#header-block h4 {
-    padding-top:10px;
-}
-
 /*******************NAV BAR**************** */
 #nav-container {
     position: fixed;
@@ -97,13 +98,23 @@ section > h1 {
 }
 
 #nav-container ul {
-    display: flex;
-    justify-content: center;
+    margin: auto;
     text-align: center;
 }
+
+#nav-container ul li{
+    display: inline-block;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px
+}
+
+#nav-container ul li i{
+    display: block;
+    text-align: center;
+}
+
 #nav-container ul a {
-    margin-left: 40px;
-    margin-right: 40px;
     text-decoration: none; 
     color: black;
     cursor: pointer;
@@ -116,9 +127,6 @@ section > h1 {
 }
 #nav-container ul a:active{
     text-decoration: none; 
-}
-#nav-container ul li {
-    display: block;
 }
 
 .topnav {
@@ -187,6 +195,10 @@ section > h1 {
     width: 60%;
 }
 
+#disco-db-project-img-mobile {
+    display: none;
+}
+
 #disco-db-project-desc {
     text-align: left;
     width: 40%;
@@ -202,10 +214,6 @@ section > h1 {
     width: 100%;
     max-width: 550px;
     margin-right:0;
-}
-
-#disco-db-project-desc hr {
-    max-width: 350px;
 }
 
 #disco-db-project-desc h1{
@@ -406,9 +414,9 @@ a.anchor-tag:hover {
         color: white;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 45px;
+        font-size: 40px;
         display: block;
-        height: 100px;
+        height: 50px;
       }
       
       /* Style the hamburger menu */
@@ -461,7 +469,7 @@ a.anchor-tag:hover {
     #section-skills #icons .devicon {
         display: inline-block;
         font-size: 6rem;
-        margin: 10px
+        margin: 10px 
     }
     
     /* Projects mobile */
@@ -479,10 +487,31 @@ a.anchor-tag:hover {
         text-align: center;
     }
 
+    .project-desc hr {
+        max-width: 100%;
+    }
+
+    .project-desc h1 {
+        text-align: center;
+    }
     #disco-db-project-img {
         display: block;
         width: 100%;
         text-align: center;
+        display: none;
+    }
+
+    #disco-db-project-img-mobile {
+        display: block;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    #disco-db-project-img-mobile img {
+        width: 100%;
+
+        margin-right:0;
     }
 
     #disco-db-project-desc {
@@ -506,6 +535,29 @@ a.anchor-tag:hover {
 }
 
 @media (max-width: 540px){ 
+
+    #header-block h1 {
+        font-size: 12vw;
+        margin-bottom: 20px;
+    }
+
+    #header-block h2 {
+        font-size: 6vw;
+    }
+
+    #header-block h4 {
+        font-size: 4vw;
+    }
+
+    #button-container {
+        margin-top: 500px;
+    }
+
+    #button-container .button {
+        display: inline;
+        padding: 12px;
+    }
+
     #contact-body img {
         padding: 0px;
     }

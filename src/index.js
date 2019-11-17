@@ -19,6 +19,12 @@ navExpand.addEventListener('click', function() {
   }
 });
 
+var links = document.getElementById("myLinks");
+links.addEventListener('click', function() {
+  links.style.display = "none";
+})
+
+
 var links = document.querySelectorAll('#myLinks > a');
 var x = document.getElementById("myLinks");
 links.forEach(function(link) {
