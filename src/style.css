@@ -13,6 +13,12 @@ section {
     padding-top:20px;
     padding-bottom: 40px;
 }
+/*** Sections ***/
+.section-header-text {
+    font-size: 60px;
+    text-align: center;
+}
+
 
 /*** Home ***/
 #section-home {
@@ -98,24 +104,24 @@ section {
 }
 
 #nav-container ul {
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
 }
 
 #nav-container ul li{
     display: inline-block;
-    text-align: center;
+    /* text-align: center; */
     padding-right: 20px;
     padding-left: 20px
 }
 
 #nav-container ul li i{
     display: block;
-    text-align: center;
+    /* text-align: center; */
 }
 
 #nav-container ul a {
-    text-decoration: none; 
+    /* text-decoration: none;  */
     color: black;
     cursor: pointer;
 }
@@ -156,15 +162,14 @@ section {
 /* *****************PROJECTS***************** */
 #section-projects {
     background-color: rgb(192, 191, 191);
-    padding: 20px;
 }
 
 #section-projects .project {
-    padding-top: 5px;
+    /* padding-top: 5px; */
     max-width: 70rem;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     margin-top: 40px;
     background-color: rgb(119, 178, 245, .5);
     border: 2px solid rgb(32, 85, 146);
@@ -267,11 +272,6 @@ section {
 
 .project-desc a {
     font-size: 18px;
-}
-
-.section-header-text {
-    font-size: 60px;
-    text-align: center;
 }
 
 .project-desc a button {
