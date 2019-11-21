@@ -30,10 +30,6 @@ section {
     background-size: cover;
 }
 
-/* #section-home > div {
-    position: relative; 
-} */
-
 #header-block {
     position: absolute;
     left: 0; 
@@ -53,7 +49,6 @@ section {
 }
 
 #header-block h1 {
-    /* font-size: 8vh; */
     text-align: center;
     color: #000000;
     font-size: 70px;
@@ -73,7 +68,6 @@ section {
 }
 
 #button-container span {
-    /* display:inline-block; */
     margin: 15px;
     font-size: inherit;
 }
@@ -104,24 +98,20 @@ section {
 }
 
 #nav-container ul {
-    /* margin: auto; */
     text-align: center;
 }
 
 #nav-container ul li{
     display: inline-block;
-    /* text-align: center; */
     padding-right: 20px;
     padding-left: 20px
 }
 
 #nav-container ul li i{
     display: block;
-    /* text-align: center; */
 }
 
 #nav-container ul a {
-    /* text-decoration: none;  */
     color: black;
     cursor: pointer;
 }
@@ -180,65 +170,28 @@ section {
 
 .project > div {
     display: inline-block;
-    width: 50%;
+    width: 49%;
 }
 
-.project .project-desc {
-    justify-content: left;
-    /* align-self:center */
-    width: 50%;
+.project-desc {
+    vertical-align: top;
 }
 
-
-.project .project-img {
+.project-img {
    text-align: right;
    width: 50%;
-}
-
-#disco-db-project-img {
-    text-align: left;
-    width: 60%;
+   text-align: center;
 }
 
 #disco-db-project-img-mobile {
     display: none;
 }
 
-#disco-db-project-desc {
-    text-align: left;
-    width: 40%;
-}
-
 .project-img img {
-    width: 100%;
-    max-width: 425px;
-    flex-basis: auto;
-    margin-right: 40px;
-}
-#disco-db-project-img #disco-db-img {
-    width: 100%;
-    max-width: 550px;
-    margin-right:0;
-}
-
-#disco-db-project-desc h1{
-    margin: 8px;
-    padding-left: 20px;
-    font-size: 36px;
-}
-
-#disco-db-project-desc p {
-    font-size: 18px;
-    padding-left: 20px;
-    margin: 8px;
-}
-
-#disco-db-project-desc a {
-    font-size: 18px;
-    margin: 8px;
-}
-#disco-db-project-desc > div {
-    padding-left: 20px;
+    max-width: 100%;
+    max-height: 500px;
+    width: auto;
+    height: auto;
 }
 
 .project-break {
@@ -247,31 +200,19 @@ section {
     max-width: 400px;
 }
 
-.project .project-desc h1 {
-    margin: 8px;
-}
-
-.project .project-desc p {
-    margin: 8px; 
-}
-
-.project .project-desc a {
-    margin: 8px;
-}
-
-.project #disco-db-project-desc * {
-    margin: 8px;
-}
 .project-desc h1 {
     font-size: 36px;
+    margin: 8px;
 }
 
 .project-desc p {
     font-size: 18px;
+    margin: 8px;
 }
 
 .project-desc a {
     font-size: 18px;
+    margin: 8px;
 }
 
 .project-desc a button {
