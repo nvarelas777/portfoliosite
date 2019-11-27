@@ -189,7 +189,7 @@ section {
 
 .project-img img {
     max-width: 100%;
-    max-height: 500px;
+    max-height: 400px;
     width: auto;
     height: auto;
 }
@@ -291,19 +291,19 @@ section {
     text-decoration: none;
 }
 
-a.anchor-tag {
+a.contact-quicklink {
     color: black;
     text-decoration: none;
 }
-a.anchor-tag:visited {
+a.contact-quicklink:visited {
     text-decoration:none;
 }
 
-a.anchor-tag:active {
+a.contact-quicklink:active {
     text-decoration: none;
 }
 
-a.anchor-tag:hover {
+a.contact-quicklink:hover {
     text-decoration: none;
 }
 
@@ -330,6 +330,12 @@ a.anchor-tag:hover {
 .button:active {
 	position:relative;
 	top:1px;
+}
+
+@media (max-width: 1280px) {
+    #section-projects .project {
+        max-width: 90%;
+    }
 }
 
 /* Navbar start */
@@ -414,6 +420,9 @@ a.anchor-tag:hover {
     }
     
     /* Projects mobile */
+    .project {
+        width: 80%;
+    }
     .project .project-desc {
         display: block;
         width: 100%;
@@ -435,6 +444,7 @@ a.anchor-tag:hover {
     .project-desc h1 {
         text-align: center;
     }
+
     #disco-db-project-img {
         display: block;
         width: 100%;
@@ -473,6 +483,16 @@ a.anchor-tag:hover {
         display: inline;
         padding: 0px;
     }
+
+    .contact-quicklink div{
+        display: inline-block;
+        max-width: 100px;
+        text-align: center;
+    }
+
+    .contact-quicklink div a {
+        display: block;
+    }
 }
 
 @media (max-width: 540px){ 
@@ -496,19 +516,49 @@ a.anchor-tag:hover {
 
     #button-container .button {
         display: inline;
-        padding: 12px;
+        padding: 12px 30px;
+    }
+
+    .section-header-text { 
+        font-size: 3em;
     }
 
     #contact-body img {
-        padding: 0px;
+        max-width: 80%;
     }
 
-    #contact-header a {
-        display: block;
-        text-align: center;
-    }
     #footer-nav ul {
         display: block;
         text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+
+    #header-block {
+     padding: 10px;   
+    }
+
+    #button-container .button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding:12px 37px;
+    }
+
+    .section-header-text { 
+        font-size: 20vw;
+    }
+
+    #section-skills #icons .devicon {
+        font-size: 20vw;
+    }
+
+    #section-projects .project { 
+        padding: 10px;   
+    }
+
+    .project-desc h1 {
+        font-size: 15vw;
     }
 }
