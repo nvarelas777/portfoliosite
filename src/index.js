@@ -33,13 +33,6 @@ links.forEach(function(link) {
   })
 })
 
-// function on() {
-//   document.getElementById("overlay").style.display = "block";
-// }
-
-// function off() {
-//   document.getElementById("overlay").style.display = "none";
-// }
 
 function fadeIn() {
   var element = document.getElementById("header-block");
@@ -48,8 +41,17 @@ function fadeIn() {
 
 window.onload = fadeIn();
 
-//Event Listeners for Scrolling
+var sections = document.getElementsByClassName("section_fade");
+Array.prototype.forEach.call(sections, function (item) {
+  document.addEventListener('scroll', function handler(e) {
+    if (item.offsetHeight < window.pageYOffset) {
+      item.classList.add("fadeInScroll");
+      e.currentTarget.removeEventListener(e.type, handler);
+    }
+  })
+});
 
+//Event Listeners for Scrolling
 var skillsOffset = document.querySelector('#section-skills').offsetTop - 86;
 var projectsOffset = document.querySelector('#section-projects').offsetTop - 86;
 var contactOffset = document.querySelector('#section-contact').offsetTop - 86;

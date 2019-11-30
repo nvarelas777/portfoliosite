@@ -20,6 +20,10 @@ section {
     text-align: center;
 }
 
+.section_fade {
+    opacity: 0;
+}
+
 /* *****************HOME***************** */
 #section-home {
     background-image: url('./mammothgreyscale.png');
@@ -76,9 +80,14 @@ section {
     animation: fadeInLoad 5s;
 }
 
+.fadeInScroll {
+    animation: fadeInLoad 5s;
+    animation-fill-mode: forwards; 
+}
+
 @keyframes fadeInLoad {
     from {
-        opacity:0;
+        opacity:.1;
     }
     to {
         opacity:1;
