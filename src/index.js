@@ -1,124 +1,122 @@
- import _ from 'lodash';
- import './style.css'
+import _ from "lodash";
+import "./style.css";
 
+// Get the offset position of the navbar
+// Add the sticky class to the navbar when you reach its scroll position.
+// Remove "sticky" when you leave the scroll position
+(function() {
+  //Nav-bar event listeners
+  (function() {
+    //Expand mobile nav-bar on click
+    var navExpand = document.getElementById("nav-bar-expand");
+    navExpand.addEventListener("click", function() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    });
 
- // Get the offset position of the navbar
- // Add the sticky class to the navbar when you reach its scroll position. 
- // Remove "sticky" when you leave the scroll position 
- (function () {
+    //Collapse mobile nav-bar on click
+    var links = document.getElementById("myLinks");
+    links.addEventListener("click", function() {
+      links.style.display = "none";
+    });
 
-   //Nav-bar event listeners
-   (function () {
-     //Expand mobile nav-bar on click
-     var navExpand = document.getElementById("nav-bar-expand");
-     navExpand.addEventListener('click', function () {
-       var x = document.getElementById("myLinks");
-       if (x.style.display === "block") {
-         x.style.display = "none";
-       } else {
-         x.style.display = "block";
-       }
-     });
+    //
+    var links = document.querySelectorAll("#myLinks > a");
+    var x = document.getElementById("myLinks");
+    links.forEach(function(link) {
+      link.addEventListener("click", function() {
+        x.style.display = "none";
+      });
+    });
+  })();
 
-     //Collapse mobile nav-bar on click
-     var links = document.getElementById("myLinks");
-     links.addEventListener('click', function () {
-       links.style.display = "none";
-     })
+  function fadeIn() {
+    var element = document.getElementById("header-block");
+    element.classList.add("fadeIn");
+  }
 
-     //
-     var links = document.querySelectorAll('#myLinks > a');
-     var x = document.getElementById("myLinks");
-     links.forEach(function (link) {
-       link.addEventListener('click', function () {
-         x.style.display = 'none';
-       })
-     })
-   })();
+  window.onload = fadeIn();
 
+  //Section Fade On Scroll
+  //  var sections = document.getElementsByClassName("section_fade");
+  //  Array.prototype.forEach.call(sections, function (item) {
+  //    document.addEventListener('scroll', function handler(e) {
+  //      if (item.offsetHeight < window.pageYOffset + item.offsetHeight) {
+  //        item.classList.add("fadeInScroll");
+  //        e.currentTarget.removeEventListener(e.type, handler);
+  //      }
+  //    })
+  //  });
 
-   function fadeIn() {
-     var element = document.getElementById("header-block");
-     element.classList.add("fadeIn");
-   }
+  //Event Listeners for Scrolling
+  var skillsOffset = document.querySelector("#section-skills").offsetTop - 86;
+  var projectsOffset =
+    document.querySelector("#section-projects").offsetTop - 86;
+  var contactOffset = document.querySelector("#section-contact").offsetTop - 86;
 
-   window.onload = fadeIn();
+  var navHome = document.getElementById("sec-home");
+  navHome.addEventListener("click", function() {
+    document.getElementById("section-home").scrollIntoView({
+      behavior: "smooth"
+    });
+  });
 
-   //Section Fade On Scroll
-   var sections = document.getElementsByClassName("section_fade");
-   Array.prototype.forEach.call(sections, function (item) {
-     document.addEventListener('scroll', function handler(e) {
-       if (item.offsetHeight < window.pageYOffset + item.offsetHeight) {
-         item.classList.add("fadeInScroll");
-         e.currentTarget.removeEventListener(e.type, handler);
-       }
-     })
-   });
+  var navProjects = document.getElementById("sec-projects");
+  navProjects.addEventListener("click", function() {
+    window.scroll({
+      top: projectsOffset,
+      behavior: "smooth"
+    });
+  });
 
-   //Event Listeners for Scrolling
-   var skillsOffset = document.querySelector('#section-skills').offsetTop - 86;
-   var projectsOffset = document.querySelector('#section-projects').offsetTop - 86;
-   var contactOffset = document.querySelector('#section-contact').offsetTop - 86;
+  var navSkills = document.getElementById("sec-skills");
+  navSkills.addEventListener("click", function() {
+    window.scroll({
+      top: skillsOffset,
+      behavior: "smooth"
+    });
+  });
 
-   var navHome = document.getElementById('sec-home');
-   navHome.addEventListener("click", function () {
-     document.getElementById('section-home').scrollIntoView({
-       behavior: 'smooth'
-     });
-   })
+  var navContact = document.getElementById("sec-contact");
+  navContact.addEventListener("click", function() {
+    window.scroll({
+      top: contactOffset,
+      behavior: "smooth"
+    });
+  });
 
-   var navProjects = document.getElementById('sec-projects');
-   navProjects.addEventListener('click', function () {
-     window.scroll({
-       top: projectsOffset,
-       behavior: 'smooth'
-     });
-   })
+  var footerHome = document.getElementById("footer-home");
+  footerHome.addEventListener("click", function() {
+    document.getElementById("section-home").scrollIntoView({
+      behavior: "smooth"
+    });
+  });
 
-   var navSkills = document.getElementById('sec-skills');
-   navSkills.addEventListener('click', function () {
-     window.scroll({
-       top: skillsOffset,
-       behavior: 'smooth'
-     });
-   })
+  var footerProjects = document.getElementById("footer-projects");
+  footerProjects.addEventListener("click", function() {
+    window.scroll({
+      top: projectsOffset,
+      behavior: "smooth"
+    });
+  });
 
-   var navContact = document.getElementById('sec-contact');
-   navContact.addEventListener('click', function () {
-     window.scroll({
-       top: contactOffset,
-       behavior: 'smooth'
-     });
-   })
+  var footerSkills = document.getElementById("footer-skills");
+  footerSkills.addEventListener("click", function() {
+    window.scroll({
+      top: skillsOffset,
+      behavior: "smooth"
+    });
+  });
 
-   var footerHome = document.getElementById('footer-home');
-   footerHome.addEventListener('click', function () {
-     document.getElementById('section-home').scrollIntoView({
-       behavior: 'smooth'
-     });
-   })
-
-   var footerProjects = document.getElementById('footer-projects');
-   footerProjects.addEventListener('click', function () {
-     window.scroll({
-       top: projectsOffset,
-       behavior: 'smooth'
-     });
-   })
-
-   var footerSkills = document.getElementById('footer-skills');
-   footerSkills.addEventListener('click', function () {
-     window.scroll({
-       top: skillsOffset,
-       behavior: 'smooth'
-     });
-   })
-
-   var footerContact = document.getElementById('footer-contact');
-   footerContact.addEventListener('click', function () {
-     window.scroll({
-       top: skillsOffset,
-       behavior: 'smooth'
-     });
-   })
- })();
+  var footerContact = document.getElementById("footer-contact");
+  footerContact.addEventListener("click", function() {
+    window.scroll({
+      top: skillsOffset,
+      behavior: "smooth"
+    });
+  });
+})();
