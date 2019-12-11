@@ -41,23 +41,7 @@ import "./style.css";
 
   window.onload = fadeIn();
 
-  //Section Fade On Scroll
-  //  var sections = document.getElementsByClassName("section_fade");
-  //  Array.prototype.forEach.call(sections, function (item) {
-  //    document.addEventListener('scroll', function handler(e) {
-  //      if (item.offsetHeight < window.pageYOffset + item.offsetHeight) {
-  //        item.classList.add("fadeInScroll");
-  //        e.currentTarget.removeEventListener(e.type, handler);
-  //      }
-  //    })
-  //  });
-
   //Event Listeners for Scrolling
-  var skillsOffset = document.querySelector("#section-skills").offsetTop - 86;
-  var projectsOffset =
-    document.querySelector("#section-projects").offsetTop - 86;
-  var contactOffset = document.querySelector("#section-contact").offsetTop - 86;
-
   var navHome = document.getElementById("sec-home");
   navHome.addEventListener("click", function() {
     document.getElementById("section-home").scrollIntoView({
@@ -68,7 +52,7 @@ import "./style.css";
   var navProjects = document.getElementById("sec-projects");
   navProjects.addEventListener("click", function() {
     window.scroll({
-      top: projectsOffset,
+      top: document.querySelector("#section-projects").offsetTop - 90,
       behavior: "smooth"
     });
   });
@@ -76,7 +60,7 @@ import "./style.css";
   var navSkills = document.getElementById("sec-skills");
   navSkills.addEventListener("click", function() {
     window.scroll({
-      top: skillsOffset,
+      top: document.querySelector("#section-skills").offsetTop - 90,
       behavior: "smooth"
     });
   });
@@ -84,7 +68,15 @@ import "./style.css";
   var navContact = document.getElementById("sec-contact");
   navContact.addEventListener("click", function() {
     window.scroll({
-      top: contactOffset,
+      top: document.querySelector("#section-contact").offsetTop - 90,
+      behavior: "smooth"
+    });
+  });
+
+  var btnContact = document.getElementById("btn-home-contact");
+  btnContact.addEventListener("click", function() {
+    window.scroll({
+      top: document.querySelector("#section-contact").offsetTop - 90,
       behavior: "smooth"
     });
   });
@@ -99,7 +91,7 @@ import "./style.css";
   var footerProjects = document.getElementById("footer-projects");
   footerProjects.addEventListener("click", function() {
     window.scroll({
-      top: projectsOffset,
+      top: document.querySelector("#section-projects").offsetTop - 90,
       behavior: "smooth"
     });
   });
@@ -107,7 +99,7 @@ import "./style.css";
   var footerSkills = document.getElementById("footer-skills");
   footerSkills.addEventListener("click", function() {
     window.scroll({
-      top: skillsOffset,
+      top: document.querySelector("#section-skills").offsetTop - 90,
       behavior: "smooth"
     });
   });
@@ -115,7 +107,7 @@ import "./style.css";
   var footerContact = document.getElementById("footer-contact");
   footerContact.addEventListener("click", function() {
     window.scroll({
-      top: skillsOffset,
+      top: document.querySelector("#section-contact").offsetTop - 90,
       behavior: "smooth"
     });
   });

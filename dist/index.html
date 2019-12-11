@@ -1,195 +1,238 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>Nick Varelas</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Hepta+Slab:500,800"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<head>
-  <title>Nick Varelas</title>
-  <link rel="stylesheet"
-    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hepta+Slab:500,800">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-  <section id="section-home">
-    <div>
-      <div id="header-block">
-        <h1>Nicholas Varelas</h1>
-        <h2>Software Engineer</h2>
-        <h4>Orange County, CA</h4>
+  <body>
+    <section id="section-home">
+      <div>
+        <div id="header-block">
+          <h1>Nicholas Varelas</h1>
+          <h2>Software Engineer</h2>
+          <h4>Orange County, CA</h4>
+        </div>
       </div>
-    </div>
-    <div id="button-container" class="fadeIn">
-      <a><span class="button">Resume</span></a>
-      <a><span class="button">Contact</span></a>
-    </div>
-    <div id="nav-bar">
-      <div id="nav-container">
+      <div id="button-container" class="fadeIn">
+        <a><span class="button">Resume</span></a>
+        <a id="btn-home-contact"><span class="button">Contact</span></a>
+      </div>
+      <div id="nav-bar">
+        <div id="nav-container">
+          <ul>
+            <a id="sec-home">
+              <li><i class="fa far fa-home fa-3x"></i>Home</li>
+            </a>
+            <a id="sec-projects">
+              <li><i class="fa fa-folder-o fa-3x"></i>Projects</li>
+            </a>
+            <a id="sec-skills">
+              <li><i class="fa fa-file-code-o fa-3x"></i>Skills</li>
+            </a>
+            <a id="sec-contact">
+              <li><i class="fa fa-address-book-o fa-3x"></i>Contact</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div id="nav-container-mobile">
+          <a href="#section-home" class="active">Home</a>
+          <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+            <a href="#section-skills">Skills</a>
+            <a href="#section-projects">Projects</a>
+            <a href="#section-contact">Contact</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" id="nav-bar-expand">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="section-skills" class="section_fade">
+      <h1 class="section-header-text">Skills</h1>
+      <div id="icons">
+        <i class="devicon devicon-javascript-plain"></i>
+        <i class="devicon devicon-java-plain-wordmark"></i>
+        <i class="devicon devicon-android-plain-wordmark"></i>
+        <i class="devicon devicon-csharp-plain-wordmark"></i>
+        <i class="devicon devicon-git-plain-wordmark"></i>
+        <i class="devicon devicon-html5-plain-wordmark"></i>
+        <i class="devicon devicon-css3-plain-wordmark"></i>
+        <i class="devicon devicon-dot-net-plain-wordmark"></i>
+        <i class="devicon devicon-jquery-plain-wordmark"></i>
+        <i class="devicon devicon-react-original-wordmark"></i>
+        <i class="devicon devicon-webpack-plain-wordmark"></i>
+        <i class="devicon devicon-mongodb-plain-wordmark"></i>
+        <i class="devicon devicon-mysql-plain-wordmark"></i>
+        <i class="devicon devicon-nodejs-plain-wordmark"></i>
+        <i class="devicon devicon-express-original-wordmark"></i>
+      </div>
+    </section>
+    <section id="section-projects" class="section_fade">
+      <h1 class="section-header-text">Projects</h1>
+      <div class="project">
+        <div class="project-desc">
+          <hr class="project-break" />
+          <h1>Cursive Made Easy</h1>
+          <p>
+            Cursive Made Easy is an mobile application developed using Java in
+            Android Studio. It was made as an educational tool to help teach
+            cursive. It includes animations created in Adobe After Effects along
+            with images created in Adobe Photoshop. An algorithm utilizing
+            bitmaps to calculate pixel change was implemented to detect whether
+            user traces followed proper procedure. It is currently available on
+            the Android Play store and Amazon Marketplace.
+          </p>
+          <div class="project-button-container">
+            <a
+              class="button"
+              href="//play.google.com/store/apps/details?id=com.nvarelas.nick.cursivemadeeasy&hl=en_US"
+              target="_blank"
+              >Live</a
+            >
+            <a
+              class="button"
+              href="//github.com/nvarelas777/discography-app"
+              target="_blank"
+              >Github</a
+            >
+          </div>
+        </div>
+        <div class="project-img">
+          <img src="//i.imgur.com/wNtmtTi.png" />
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-img" id="disco-db-project-img">
+          <img id="disco-db-img" src="//i.imgur.com/md30bHb.png" />
+        </div>
+        <div class="project-desc" id="disco-db-project-desc">
+          <hr class="project-break" />
+          <h1>Disco DB</h1>
+          <p>
+            Discography Database is a web project developed with React. It
+            allows users to search a band and returns their discography.
+            Deezer's API was used for searching and fetching date. Styled
+            components were used for the styling and Reactstrap was implemented
+            to ensure responsiveness.
+          </p>
+          <div class="project-button-container">
+            <a
+              class="button"
+              href="//whispering-citadel-25612.herokuapp.com/artist/415"
+              target="_blank"
+              >Live</a
+            >
+            <a
+              class="button"
+              href="//github.com/nvarelas777/discography-app"
+              target="_blank"
+              >Github</a
+            >
+          </div>
+        </div>
+        <div id="disco-db-project-img-mobile">
+          <img id="disco-db-img" src="//i.imgur.com/md30bHb.png" />
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-desc">
+          <hr class="project-break" />
+          <h1>Drink DB</h1>
+          <p>
+            As an ex-bartender, I know how difficult it can be to memorize
+            different drinks. Drink DB is a full stack web application built
+            using the Javascript frameworks and libraries. It includes a backend
+            written using Node and Express along with MongoDB. The frontend was
+            written using React.
+          </p>
+          <div class="project-button-container">
+            <a
+              class="button"
+              href="//whispering-citadel-25612.herokuapp.com/artist/415"
+              target="_blank"
+              >Live</a
+            >
+            <a
+              class="button"
+              href="//github.com/nvarelas777/discography-app"
+              target="_blank"
+              >Github</a
+            >
+          </div>
+        </div>
+        <div class="project-img">
+          <img src="//i.imgur.com/jqMPKMY.png" />
+        </div>
+      </div>
+    </section>
+    <section id="section-contact" class="section_fade">
+      <h1 class="section-header-text">Contact</h1>
+      <div class="container">
+        <div id="contact-body">
+          <a
+            href="//www.dropbox.com/s/075925222so0b9t/Varelas_Nicholas_Resume.pdf?dl=0"
+            target="_blank"
+          >
+            <img src="//i.imgur.com/5gwXVP5.png" />
+          </a>
+        </div>
+        <div id="contact-header">
+          <a class="contact-quicklink" href="//google.com">
+            <div>
+              <i class="fa far fa-envelope fa-3x"></i>
+              <span>Email</span>
+            </div>
+          </a>
+          <a class="contact-quicklink" href="//github.com">
+            <div>
+              <i class="fa fab fa-github fa-3x"></i>
+              <span>Github</span>
+            </div>
+          </a>
+          <a class="contact-quicklink" href="//linkedin.com/in/nvarelas777/">
+            <div>
+              <i class="fa fab fa-linkedin fa-3x"></i>
+              <span>Linked In</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="section-footer">
+      <div id="footer-nav">
         <ul>
-          <a id="sec-home">
-            <li><i class="fa far fa-home fa-3x"></i>Home</li>
+          <a id="footer-home">
+            <li>Home</li>
           </a>
-          <a id="sec-projects">
-            <li><i class="fa fa-folder-o fa-3x"></i>Projects</li>
+          <a id="footer-projects">
+            <li>Projects</li>
           </a>
-          <a id="sec-skills">
-            <li><i class="fa fa-file-code-o fa-3x"></i>Skills</li>
+          <a id="footer-skills">
+            <li>Skills</li>
           </a>
-          <a id="sec-contact">
-            <li><i class="fa fa-address-book-o fa-3x"></i>Contact</li>
+          <a id="footer-contact">
+            <li>Contact Me</li>
           </a>
         </ul>
       </div>
-    </div>
-    <div>
-      <div id="nav-container-mobile">
-        <a href="#section-home" class="active">Home</a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-          <a href="#section-skills">Skills</a>
-          <a href="#section-projects">Projects</a>
-          <a href="#section-contact">Contact</a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" id="nav-bar-expand">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section id="section-skills" class="section_fade">
-    <h1 class="section-header-text">Skills</h1>
-    <div id="icons">
-      <i class="devicon devicon-javascript-plain"></i>
-      <i class="devicon devicon-java-plain-wordmark"></i>
-      <i class="devicon devicon-android-plain-wordmark"></i>
-      <i class="devicon devicon-csharp-plain-wordmark"></i>
-      <i class="devicon devicon-git-plain-wordmark"></i>
-      <i class="devicon devicon-html5-plain-wordmark"></i>
-      <i class="devicon devicon-css3-plain-wordmark"></i>
-      <i class="devicon devicon-dot-net-plain-wordmark"></i>
-      <i class="devicon devicon-jquery-plain-wordmark"></i>
-      <i class="devicon devicon-react-original-wordmark"></i>
-      <i class="devicon devicon-webpack-plain-wordmark"></i>
-      <i class="devicon devicon-mongodb-plain-wordmark"></i>
-      <i class="devicon devicon-mysql-plain-wordmark"></i>
-      <i class="devicon devicon-nodejs-plain-wordmark"></i>
-      <i class="devicon devicon-express-original-wordmark"></i>
-    </div>
-  </section>
-  <section id="section-projects" class="section_fade">
-    <h1 class="section-header-text">Projects</h1>
-    <div class="project">
-      <div class="project-desc">
-        <hr class="project-break" />
-        <h1>Cursive Made Easy</h1>
-        <p>Cursive Made Easy is an mobile application developed using Java in Android Studio. It was made as an
-          educational tool to help teach cursive. It includes animations created in Adobe After Effects along with
-          images created in Adobe Photoshop. An algorithm utilizing bitmaps to calculate pixel change was implemented
-          to detect whether user traces followed proper procedure. It is currently available on the Android Play store
-          and Amazon Marketplace.
-        </p>
-        <div class="project-button-container">
-          <a class="button" href="//play.google.com/store/apps/details?id=com.nvarelas.nick.cursivemadeeasy&hl=en_US"
-            target="_blank">Live</a>
-          <a class="button" href="//github.com/nvarelas777/discography-app" target="_blank">Github</a>
-        </div>
-      </div>
-      <div class="project-img">
-        <img src="//i.imgur.com/wNtmtTi.png">
-      </div>
-    </div>
-    <div class="project">
-      <div class="project-img" id="disco-db-project-img">
-        <img id="disco-db-img" src="//i.imgur.com/md30bHb.png">
-      </div>
-      <div class="project-desc" id="disco-db-project-desc">
-        <hr class="project-break" />
-        <h1>Disco DB</h1>
-        <p>Discography Database is a web project developed with React. It allows users to search a band and returns
-          their
-          discography. Deezer's API was used for searching and fetching date. Styled components were used for the
-          styling and
-          Reactstrap was implemented to ensure responsiveness.
-        </p>
-        <div class="project-button-container">
-          <a class="button" href="//whispering-citadel-25612.herokuapp.com/artist/415" target="_blank">Live</a>
-          <a class="button" href="//github.com/nvarelas777/discography-app" target="_blank">Github</a>
-        </div>
-      </div>
-      <div id="disco-db-project-img-mobile">
-        <img id="disco-db-img" src="//i.imgur.com/md30bHb.png">
-      </div>
-    </div>
-    <div class="project">
-      <div class="project-desc">
-        <hr class="project-break" />
-        <h1>Drink DB</h1>
-        <p>As an ex-bartender, I know how difficult it can be to memorize different drinks. Drink DB is a full stack web
-          application
-          built using the Javascript frameworks and libraries. It includes a backend written using Node and Express
-          along with MongoDB.
-          The frontend was written using React.
-        </p>
-        <div class="project-button-container">
-          <a class="button" href="//whispering-citadel-25612.herokuapp.com/artist/415" target="_blank">Live</a>
-          <a class="button" href="//github.com/nvarelas777/discography-app" target="_blank">Github</a>
-        </div>
-      </div>
-      <div class="project-img">
-        <img src="//i.imgur.com/jqMPKMY.png">
-      </div>
-    </div>
-  </section>
-  <section id="section-contact" class="section_fade">
-    <h1 class="section-header-text">Contact</h1>
-    <div class="container">
-      <div id="contact-body">
-        <a href="//www.dropbox.com/s/075925222so0b9t/Varelas_Nicholas_Resume.pdf?dl=0" target="_blank">
-          <img src="//i.imgur.com/5gwXVP5.png">
-        </a>
-      </div>
-      <div id="contact-header">
-        <a class="contact-quicklink" href="//google.com">
-          <div>
-            <i class="fa far fa-envelope fa-3x"></i>
-            <span>Email</span>
-          </div>
-        </a>
-        <a class="contact-quicklink" href="//github.com">
-          <div>
-            <i class="fa fab fa-github fa-3x"></i>
-            <span>Github</span>
-          </div>
-        </a>
-        <a class="contact-quicklink" href="//linkedin.com/in/nvarelas777/">
-          <div>
-            <i class="fa fab fa-linkedin fa-3x"></i>
-            <span>Linked In</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section id="section-footer">
-    <div id=footer-nav>
-      <ul>
-        <a id="footer-home">
-          <li>Home</li>
-        </a>
-        <a id="footer-projects">
-          <li>Projects</li>
-        </a>
-        <a id="footer-skills">
-          <li>Skills</li>
-        </a>
-        <a id="footer-contact">
-          <li>Contact Me</li>
-        </a>
-      </ul>
-    </div>
-  </section>
-  <script src="bundle.js"></script>
-</body>
-
+    </section>
+    <script src="bundle.js"></script>
+  </body>
 </html>

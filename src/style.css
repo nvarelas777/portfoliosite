@@ -100,6 +100,7 @@ section {
 #nav-container {
   position: fixed;
   top: 0;
+  height: 70px;
   width: 100%;
   background-color: black;
   padding-top: 10px;
@@ -557,6 +558,10 @@ a.contact-quicklink:hover {
   #button-container .button {
     display: inline;
     padding: 12px 30px;
+  }
+
+  #button-container span {
+    margin: 10px;
   }
 
   .section-header-text {
