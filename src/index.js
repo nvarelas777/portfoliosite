@@ -6,6 +6,14 @@ import "./style.css";
 // Remove "sticky" when you leave the scroll position
 (function() {
   //Nav-bar event listeners
+
+  //SrollReveal().reveal('.section-header-text')
+  ScrollReveal().reveal('.item_fade', 
+    {
+      delay: 100,
+       duration: 600 
+    });
+
   (function() {
     //Expand mobile nav-bar on click
     var navExpand = document.getElementById("nav-bar-expand");
@@ -33,13 +41,6 @@ import "./style.css";
       });
     });
   })();
-
-  function fadeIn() {
-    var element = document.getElementById("header-block");
-    element.classList.add("fadeIn");
-  }
-
-  window.onload = fadeIn();
 
   //Event Listeners for Scrolling
   var navHome = document.getElementById("sec-home");

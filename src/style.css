@@ -77,25 +77,6 @@ section {
   font-size: inherit;
 }
 
-.fadeIn {
-  animation: fadeInLoad 5s;
-}
-
-.fadeInScroll {
-  animation: fadeInLoad 5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeInLoad {
-  from {
-    opacity: 0.1;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 /*******************NAV BAR**************** */
 #nav-container {
   position: fixed;
