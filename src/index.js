@@ -7,8 +7,9 @@ import "./style.css";
 (function() {
   window.onload = function() {
     var loader = document.getElementById("loader");
-
+    var content = document.getElementById("content");
     setTimeout(function() {
+      content.style.display = "block";
       loader.classList.add("fadeOut");
     }, 2000);
   };
