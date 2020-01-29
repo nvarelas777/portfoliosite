@@ -24,6 +24,26 @@ section {
 .section_fade {
   opacity: 0;
 } */
+.fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.4s, opacity 0.4s linear;
+}
+
+#loader {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(55, 86, 126);
+  position: fixed;
+  z-index: 2;
+  background-image: url("./loading.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#loader img {
+  z-index: 4;
+}
 
 /* *****************HOME***************** */
 #section-home {

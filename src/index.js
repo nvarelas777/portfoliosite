@@ -5,14 +5,19 @@ import "./style.css";
 // Add the sticky class to the navbar when you reach its scroll position.
 // Remove "sticky" when you leave the scroll position
 (function() {
-  //Nav-bar event listeners
+  window.onload = function() {
+    var loader = document.getElementById("loader");
+
+    setTimeout(function() {
+      loader.classList.add("fadeOut");
+    }, 2000);
+  };
 
   //SrollReveal().reveal('.section-header-text')
-  ScrollReveal().reveal('.item_fade', 
-    {
-      delay: 100,
-       duration: 600 
-    });
+  ScrollReveal().reveal(".item_fade", {
+    delay: 100,
+    duration: 600
+  });
 
   (function() {
     //Expand mobile nav-bar on click
