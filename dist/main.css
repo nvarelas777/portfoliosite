@@ -6,7 +6,7 @@
 
 /* *****************HEADER***************** */
 body {
-  font-family: "Hepta Slab", "Trebuchet MS", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 
@@ -604,4 +604,3 @@ a.contact-quicklink:hover {
     font-size: 15vw;
   }
 }
-

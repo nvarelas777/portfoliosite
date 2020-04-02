@@ -100,10 +100,11 @@ section {
   top: 0;
   height: 70px;
   width: 100%;
-  background-color: black;
+  background-color: rgb(119, 178, 245);
+  background-color: rgb(119, 178, 245, 0.9);
   padding-top: 10px;
   padding-bottom: 10px;
-  background: rgb(119, 178, 245, 0.9);
+  /* background: rgb(119, 178, 245, 0.9); */
   z-index: 1;
 }
 
@@ -176,6 +177,7 @@ section {
   /* display: flex;
     flex-wrap: wrap; */
   margin-top: 40px;
+  background-color: rgb(119, 178, 245);
   background-color: rgb(119, 178, 245, 0.5);
   border: 2px solid rgb(32, 85, 146);
   box-shadow: 3px 3px rgb(3, 58, 122);
@@ -330,6 +332,7 @@ a.contact-quicklink:hover {
 
 .button {
   box-shadow: 0px 0px 0px 2px #9fb4f2;
+  background: rgb(119, 178, 245);
   background: rgb(119, 178, 245, 0.9);
   border-radius: 2px;
   border: 1px solid rgb(32, 85, 146);
