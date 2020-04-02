@@ -6,8 +6,8 @@
 
 /* *****************HEADER***************** */
 body {
-  font-family: "Hepta Slab", "Trebuchet MS", sans-serif;
-  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
 }
 
 section {
@@ -171,18 +171,14 @@ section {
 }
 
 #section-projects .project {
-  /* padding-top: 5px; */
   max-width: 70rem;
   margin: auto;
-  /* display: flex;
-    flex-wrap: wrap; */
   margin-top: 40px;
-  background-color: rgb(119, 178, 245);
-  background-color: rgb(119, 178, 245, 0.5);
-  border: 2px solid rgb(32, 85, 146);
-  box-shadow: 3px 3px rgb(3, 58, 122);
-  border-radius: 8px;
   padding: 30px;
+}
+
+#section-projects .project:not(:last-child) {
+  border-bottom: 4px solid black;
 }
 
 .project > div {
@@ -223,7 +219,7 @@ section {
 }
 
 .project-desc p {
-  font-size: 18px;
+  font-size: 20px;
   margin: 8px;
 }
 
@@ -232,7 +228,7 @@ section {
 }
 
 .project-desc a {
-  font-size: 18px;
+  font-size: 20px;
   margin: 8px;
 }
 
