@@ -20,10 +20,7 @@ section {
   font-size: 60px;
   text-align: center;
 }
-/* 
-.section_fade {
-  opacity: 0;
-} */
+
 .fadeOut {
   visibility: hidden;
   opacity: 0;
