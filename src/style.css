@@ -91,6 +91,10 @@ section {
   font-size: inherit;
 }
 
+#btn-home-resume {
+  text-decoration: none;
+}
+
 /*******************NAV BAR**************** */
 #nav-container {
   position: fixed;
@@ -569,6 +573,12 @@ a.contact-quicklink:hover {
   #footer-nav ul {
     display: block;
     text-align: center;
+  }
+}
+
+@media (max-height: 540px) {
+  #section-home {
+    height: 100%;
   }
 }
 
